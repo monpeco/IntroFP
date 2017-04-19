@@ -1,6 +1,6 @@
 -- 1
 -- Type ghci to open it up in your terminal
--- Load script with :l haskelltut
+-- Load script with :l tutorial.hs
 -- :quit exits the GHCi
 
 -- 2
@@ -65,6 +65,9 @@ modEx2 = 5 `mod` 4
 
 -- negative numbers must be surrounded with parenthesess
 negNum = 4 + (-5)
+
+:t sqrt
+-- sqrt :: Floating a => a -> a
 
 -- If you define an Int you must use fromIntegral to use it with sqrt
 -- :t sqrt shows that it returns a floating point number
