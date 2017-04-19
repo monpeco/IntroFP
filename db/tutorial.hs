@@ -66,7 +66,7 @@ modEx2 = 5 `mod` 4
 -- negative numbers must be surrounded with parenthesess
 negNum = 4 + (-5)
 
-:t sqrt
+-- :t sqrt
 -- sqrt :: Floating a => a -> a
 
 -- If you define an Int you must use fromIntegral to use it with sqrt
@@ -85,5 +85,84 @@ ceilingVal = ceiling 9.999
 floorVal = floor 9.999
 
 -- Also sin, cos, tan, asin, atan, acos, sinh, tanh, cosh, asinh, atanh, acosh
+
+-- Logical operators
+
+trueAndFalse = True && False
+trueOrFalse = True || False
+notTrue = not(True)
+
+-- how works addition funtion
+-- :t (+)
+-- (+) :: Num a => a -> a -> a
+
+-- how truncate works
+-- :t truncate
+-- truncate :: (Integral b, RealFrac a) => a -> b
+
+-- how concatenate lists
+primeNumbers = [3,5,7,11]
+morePrime = primeNumbers ++ [13,17,19,23,29]
+
+-- to reload changes is the .hs file
+-- :r
+
+-- other wat to define a list
+favNums = 2 : 7 : 21 : 66 : []
+
+-- list inside of a list
+multList = [[3,5,7], [11,13,17]] 
+
+-- add a number at the beginning of a list
+morePrimes2 = 2 : morePrime
+
+-- Length of a list
+lenPrime = length morePrimes2
+
+-- reverse a list
+revList = reverse morePrimes2   
+
+-- check if a list is empty
+isListEmpty = null morePrimes2
+
+-- get a particular value of a list
+secondPrime = morePrimes2 !! 1
+
+-- first and last number of a list
+firstPrime = head morePrimes2
+lastPrime = last morePrimes2
+
+-- everything but the last value
+primeInit = init morePrimes2
+
+-- take 3 first values
+first3Primes = take 3 morePrimes2
+
+-- exclude first 3 values
+removedPrimes =  drop 3 morePrimes2
+
+-- check if a value is in the list
+is7InList = 7 `elem` morePrimes2
+
+-- get the maximun and minimun value of a list
+maxValue = maximum morePrimes2
+minValue = minimum morePrimes2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
