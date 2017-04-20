@@ -177,6 +177,23 @@ many3s = replicate 10 3
 cycleList = take 10 (cycle [1,2,3,4,5])
 cycleList2 = take 15 (cycle [2,4,6,7,10])
 
+-- You could perform operations on all values in a list
+-- Cycle through the list storing each value in x which is multiplied by 2 and
+-- then stored in a new list
+listTimes2 = [x*2 | x <- [0..100]]
+
+-- We can filter the results with conditions
+listTimes3 = [x*3 | x <- [0..20]]
+-- [0,3,6,9,12,15,18,21,24,27]
+
+listTimes3' = [x*3 | x <- [0..20], x*3<50]
+-- [0,3,6,9,12,15,18,21,24,27,30,33,36,39,42,45,48]
+
+listTimes3'' = [x*3 | x <- [0..20], x<10]
+-- [0,3,6,9,12,15,18,21,24,27,30,33,36,39,42,45,48,51,54,57,60]
+
+
+
 
 
 
