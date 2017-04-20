@@ -148,18 +148,21 @@ is7InList = 7 `elem` morePrimes2
 maxValue = maximum morePrimes2
 minValue = minimum morePrimes2
 
+-- Get product of values in list (Value all can evenly divide by)
+newList = [2,3,5]
+prodPrimes = product newList
+newList2 = [2,5,10,2]
+prodPrimes2 = product newList2
 
+-- create a list from 0 to 10
+zeroToTen = [0..10]
 
+-- Create list of evens by defining the step between the first 2 values
+evens = [2, 4..20]
 
-
-
-
-
-
-
-
-
-
+-- create a list of letters
+letters = ['A', 'B'..'Z']
+letters2 = ['A', 'C'..'Z']
 
 
 
