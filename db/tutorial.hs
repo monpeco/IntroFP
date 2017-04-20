@@ -192,8 +192,8 @@ listTimes3' = [x*3 | x <- [0..20], x*3<50]
 listTimes3'' = [x*3 | x <- [0..20], x<10]
 -- [0,3,6,9,12,15,18,21,24,27,30,33,36,39,42,45,48,51,54,57,60]
 
-
-
+-- Return all values that are divisible by 13 and 9
+divisBy9N13 = [x | x <- [1..500], x `mod` 13 == 0, x `mod` 9 == 0]
 
 
 
