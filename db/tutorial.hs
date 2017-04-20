@@ -164,6 +164,18 @@ evens = [2, 4..20]
 letters = ['A', 'B'..'Z']
 letters2 = ['A', 'C'..'Z']
 
+-- You can generate an infinite list and Haskell will only generate what you need
+infinPow10 = [10,20..]
+
+-- repeat repeats a value a defined number of times
+many2s = take 10 (repeat 2)
+
+-- replicate generates a value a specified number of times
+many3s = replicate 10 3
+
+-- cycle replicates the values in a list indefinitely 
+cycleList = take 10 (cycle [1,2,3,4,5])
+cycleList2 = take 15 (cycle [2,4,6,7,10])
 
 
 
