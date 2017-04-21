@@ -195,6 +195,26 @@ listTimes3'' = [x*3 | x <- [0..20], x<10]
 -- Return all values that are divisible by 13 and 9
 divisBy9N13 = [x | x <- [1..500], x `mod` 13 == 0, x `mod` 9 == 0]
 
+-- Sorting functions
 
+-- Sort a list
+sortedList = sort [9,1,5,8,7,4,2]
 
+-- zipwith can combine lists using a function
+sumOfList = zipWith (+) [1,2,3,4,5] [6,7,8,9,10]
+
+-- Filter returns a list of items that match a condition
+listBiggerThen10 = filter (>10) sumOfList
+
+-- takeWhile returns list items until the condition is false
+upTo10 = takeWhile (<10) sumOfList
+evensUpTo20 = takeWhile (<=20) [2,4..]
+
+-- foldl applies the operation on each item of a list
+-- foldr applies these operations from the right
+multOfList = foldl (*) 1 [2,3,4,5]
+multOfList2 = foldl (*) 2 [2,3,4,5]
+divOfList = foldl (/) 64 [4,2,4]
+
+multOfListRigth = foldr (*) 1 [2,3,4,5]
 
