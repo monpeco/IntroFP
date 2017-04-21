@@ -252,3 +252,15 @@ addresses = ["123 Main","234 North","567 South"]
 namesNAddress = zip names addresses 
 -- [("Bob","123 Main"),("Mary","234 North"),("Tom","567 South")]
 
+
+
+-- ---------- FUNCTIONS ----------
+-- ghc --make another.hs  compiles your program and executes the main function
+ 
+-- Functions must start with lowercase letters
+ 
+-- to execute the 'another' executable 
+-- $ ./another 
+-- What's your name: 
+-- 45454
+-- Hello 45454
