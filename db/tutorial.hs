@@ -218,3 +218,14 @@ divOfList = foldl (/) 64 [4,2,4]
 
 multOfListRigth = foldr (*) 1 [2,3,4,5]
 
+-- ---------- LIST COMPREHENSION ----------
+
+-- We can generate a list from 1 to 10 to the power of 3
+power3List = [3^n | n <- [1..10]]
+
+-- We can filter the results to only show values divisible by 9
+power3ListDiv9 = [3^n | n <- [1..10], 3^n `mod` 9 == 0]
+
+-- Generate a multiplication table by multiplying x * y where y has the values
+-- 1 through 10 and where x does as well
+multTable = [[x*y | x <- [1..10]] | y <- [1..10] ]
