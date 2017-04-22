@@ -284,3 +284,9 @@ addMe x y = x + y
 -- Without function declaration
 sumMe x y = x + y
 
+-- Another function
+addTuple :: (Int, Int) -> (Int, Int) -> (Int, Int) 
+
+addTuple (a,b) (c,d) = (a+c, b+d)
+-- addTuple (1,4) (2,10)
+-- (3,14)
