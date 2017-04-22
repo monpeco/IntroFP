@@ -269,3 +269,16 @@ namesNAddress = zip names addresses
 -- What's your name: 
 -- 45454
 -- Hello 45454
+
+
+-- Create a function 
+-- define the signature
+addMe :: Int -> Int -> Int
+
+-- funtionName param1 param2 = operation (result)
+addMe x y = x + y
+-- addMe 10 22
+-- 32
+
+
+
