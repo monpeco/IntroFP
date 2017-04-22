@@ -296,3 +296,10 @@ whatAge 16 = "You can drive"
 whatAge 18 = "You can vote"
 whatAge 21 = "You are an adult"
 whatAge x = "Nothing"
+
+
+-- recursion
+factorial 0 = 1
+factorial x = x * factorial (x-1)
+
+
