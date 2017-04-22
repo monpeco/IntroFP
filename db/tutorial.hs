@@ -272,13 +272,15 @@ namesNAddress = zip names addresses
 
 
 -- Create a function 
--- define the signature
+-- define the signature (function declaration)
 addMe :: Int -> Int -> Int
 
+-- function definition
 -- funtionName param1 param2 = operation (result)
 addMe x y = x + y
 -- addMe 10 22
 -- 32
 
-
+-- Without function declaration
+sumMe x y = x + y
 
