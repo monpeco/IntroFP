@@ -290,3 +290,9 @@ addTuple :: (Int, Int) -> (Int, Int) -> (Int, Int)
 addTuple (a,b) (c,d) = (a+c, b+d)
 -- addTuple (1,4) (2,10)
 -- (3,14)
+
+-- int to String function
+whatAge 16 = "You can drive"
+whatAge 18 = "You can vote"
+whatAge 21 = "You are an adult"
+whatAge x = "Nothing"
