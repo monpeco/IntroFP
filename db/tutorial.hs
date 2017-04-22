@@ -303,3 +303,12 @@ factorial 0 = 1
 factorial x = x * factorial (x-1)
 
 
+-- Boolean function
+isOdd :: Int -> Bool
+
+isOdd x 
+  | x `mod` 2 == 0 = False
+  | otherwise = True
+  
+isEven x = x `mod` 2 == 0
+  
