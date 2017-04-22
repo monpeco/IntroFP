@@ -226,6 +226,11 @@ power3List = [3^n | n <- [1..10]]
 -- We can filter the results to only show values divisible by 9
 power3ListDiv9 = [3^n | n <- [1..10], 3^n `mod` 9 == 0]
 
+-- We can have more than one filter
+power3Div9 = [3^n | n <- [1..10], 3^n `mod` 9 ==0]
+power3Div9Lower100 = [3^n | n <- [1..10], 3^n `mod` 9 ==0, 3^n <= 1000]
+power3Div9Bet100N1000 = [3^n | n <- [1..10], 3^n `mod` 9 ==0, 3^n <= 1000, 3^n `mod` 9 ==0, 3^n >= 100]
+
 -- Generate a multiplication table by multiplying x * y where y has the values
 -- 1 through 10 and where x does as well
 multTable = [[x*y | x <- [1..10]] | y <- [1..10] ]
