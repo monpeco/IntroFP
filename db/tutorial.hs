@@ -302,8 +302,10 @@ whatAge x = "Nothing"
 factorial 0 = 1
 factorial x = x * factorial (x-1)
 
+-- another factorial
+prodFact x = product [1..x]
 
--- Boolean function
+-- Boolean function (With guards)
 isOdd :: Int -> Bool
 
 isOdd x 
@@ -311,4 +313,18 @@ isOdd x
   | otherwise = True
   
 isEven x = x `mod` 2 == 0
+
+-- more guards
+whatGrade :: Int -> String
+
+whatGrade age
+  | (age >= 5) && (age <= 6) = "Kindergarten"
+  | (age > 6) && (age <= 10) = "Elemntary School"
+  | (age > 10) && (age <= 14) = "Middle School"
+  | (age > 14) && (age <= 18) = "High School"
+  | otherwise = "Go to College"
+
+
+
+
   
