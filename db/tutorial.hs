@@ -334,4 +334,10 @@ batAvgRating hits atBats
 	| otherwise = "You're a Superstar"
 	where avg = hits / atBats 
 
-  
+-- You can access list items by separating letters with : or get everything but
+-- the first item with xs
+getListItems :: [Int] -> String
+getListItems [] = "Your list is empty"
+getListItems (x:[]) = "Your list contains " ++ show x
+getListItems (x:y:[]) = "Your list contains " ++ show x ++ " and " ++ show y
+getListItems (x:xs) = "The first item is " ++ show x ++ " and the rest are: " ++ show xs
