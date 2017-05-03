@@ -341,3 +341,9 @@ getListItems [] = "Your list is empty"
 getListItems (x:[]) = "Your list contains " ++ show x
 getListItems (x:y:[]) = "Your list contains " ++ show x ++ " and " ++ show y
 getListItems (x:xs) = "The first item is " ++ show x ++ " and the rest are: " ++ show xs
+
+-- We can also get values with an As pattern
+getFirstItem :: String -> String
+getFirstItem [] = "Empty array"
+getFirstItem all@(x:xs) = "The fist letter in " ++ all ++ " is " ++ show [x]
+
