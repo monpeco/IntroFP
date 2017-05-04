@@ -347,3 +347,13 @@ getFirstItem :: String -> String
 getFirstItem [] = "Empty array"
 getFirstItem all@(x:xs) = "The fist letter in " ++ all ++ " is " ++ show [x]
 
+
+
+-- ---------- HIGHER ORDER FUNCTIONS ----------
+-- Passing of functions as if they are variables
+ 
+times4 :: Int -> Int
+times4 x = x * 4
+ 
+-- map applies a function to every item in the list
+listTimes4 = map times4 [1,2,3,4,5]
