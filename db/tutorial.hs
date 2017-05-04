@@ -328,11 +328,11 @@ whatGrade age
 -- The where clause keeps us from having to repeat a calculation
 batAvgRating :: Double -> Double -> String
 batAvgRating hits atBats
-	| avg <= 0.200 = "Terrible Batting Average"
-	| avg <= 0.250 = "Average Player"
-	| avg <= 0.280 = "Your doing pretty good"
-	| otherwise = "You're a Superstar"
-	where avg = hits / atBats 
+  | avg <= 0.200 = "Terrible Batting Average"
+  | avg <= 0.250 = "Average Player"
+  | avg <= 0.280 = "Your doing pretty good"
+  | otherwise = "You're a Superstar"
+  where avg = hits / atBats 
 
 -- You can access list items by separating letters with : or get everything but
 -- the first item with xs
