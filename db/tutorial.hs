@@ -357,3 +357,10 @@ times4 x = x * 4
  
 -- map applies a function to every item in the list
 listTimes4 = map times4 [1,2,3,4,5]
+
+mulBt4 :: [Int] -> [Int]
+mulBt4 [] = []
+mulBt4 (x:xs) = times4 x : mulBt4 xs
+
+
+
