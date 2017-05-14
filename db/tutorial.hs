@@ -397,6 +397,18 @@ threePlusList = map adds3 [1,2,3,4,5]
 
 double1to10 = map (\x -> x * 2) [1..10]
 
+-- ---------- CONDITIONALS ----------
+ 
+-- Comparison Operators : < > <= >= == /=
+-- Logical Operators : && || not
+ 
+-- Every if statement must contain an else
+doubleEvenNumber y = 
+	if (y `mod` 2 /= 0)
+		then y
+		else y * 2
+
+
 
 
 
