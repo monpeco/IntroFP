@@ -362,5 +362,23 @@ mulBt4 :: [Int] -> [Int]
 mulBt4 [] = []
 mulBt4 (x:xs) = times4 x : mulBt4 xs
 
+areStringsEqual :: [Char] -> [Char] -> Bool
+areStringsEqual [] [] = True
+areStringsEqual (x:xs) (y:ys) = x == y && areStringsEqual xs ys
+areStringsEqual _ _ = False
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
