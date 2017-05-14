@@ -380,7 +380,7 @@ doMult2 func value = func value
 
 numFuncValue = doMult2 times4 4
 
--- Definint a funtion thar returns a funtion
+-- Defining a funtion that returns a funtion
 getAddFunc :: Int -> (Int -> Int)
 getAddFunc x y = x + y
 
@@ -391,9 +391,11 @@ fourPlus3 = adds3 4
 threePlusList = map adds3 [1,2,3,4,5]
 
 
+-- ---------- LAMBDA ----------
+-- How we create functions without a name
+-- \ represents lambda then you have the arguments -> and result
 
-
-
+double1to10 = map (\x -> x * 2) [1..10]
 
 
 
