@@ -368,6 +368,19 @@ areStringsEqual (x:xs) (y:ys) = x == y && areStringsEqual xs ys
 areStringsEqual _ _ = False
 
 
+-- Defining a function that recieves a function as parameter
+doMult :: (Int -> Int) -> Int
+doMult func = func 3
+
+num3Times4 = doMult (times4)
+
+--
+doMult2 :: (Int -> Int) -> Int -> Int
+doMult2 func value = func value
+
+numFuncValue = doMult2 times4 4
+
+
 
 
 
