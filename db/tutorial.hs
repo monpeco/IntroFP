@@ -380,7 +380,15 @@ doMult2 func value = func value
 
 numFuncValue = doMult2 times4 4
 
+-- Definint a funtion thar returns a funtion
+getAddFunc :: Int -> (Int -> Int)
+getAddFunc x y = x + y
 
+adds3 = getAddFunc 3
+fourPlus3 = adds3 4
+
+-- We could use this function with map as well
+threePlusList = map adds3 [1,2,3,4,5]
 
 
 
